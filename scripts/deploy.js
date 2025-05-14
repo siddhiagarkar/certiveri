@@ -3,7 +3,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const CertificateVerification = await hre.ethers.getContractFactory("CertificateVerification");
+  const CertificateVerification = await hre.ethers.getContractFactory('CertificateVerification');
   const contract = await CertificateVerification.deploy();
 
   await contract.waitForDeployment();
